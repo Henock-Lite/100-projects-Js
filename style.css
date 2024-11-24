@@ -1,0 +1,82 @@
+*,
+::before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: rgba(16, 15, 15, 0.875);
+  padding: 15px;
+  width: clamp(7.5rem, 7vw, 5rem);
+  display: block;
+  text-align: center;
+  background: white;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-variant: small-caps;
+  transition: ease 0.3s;
+}
+a:hover {
+  background: skyblue;
+  color: white;
+  transform: scale(1.1);
+}
+h1 {
+  font-size: clamp(1.8rem, 8vw, 5rem);
+  text-transform: capitalize;
+  font-variant: small-caps;
+  /* color: rgba(0, 0, 0, 0.621); */
+  color: white;
+  transition: color cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+h1:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+video {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.212);
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+}
+.lineWhite {
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 694px) {
+  a {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 573px) {
+  a {
+    padding: 6px;
+  }
+}
