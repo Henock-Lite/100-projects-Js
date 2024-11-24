@@ -17,7 +17,9 @@ a {
   width: clamp(7.5rem, 7vw, 5rem);
   display: block;
   text-align: center;
-  background: white;
+  background: transparent;
+  border: solid 2px white;
+  color: white;
   text-transform: capitalize;
   font-weight: 700;
   font-variant: small-caps;
@@ -27,9 +29,10 @@ a:hover {
   background: skyblue;
   color: white;
   transform: scale(1.1);
+  border: none;
 }
 h1 {
-  font-size: clamp(1.8rem, 8vw, 5rem);
+  font-size: clamp(1.8rem, 8vw, 10rem);
   text-transform: capitalize;
   font-variant: small-caps;
   /* color: rgba(0, 0, 0, 0.621); */
