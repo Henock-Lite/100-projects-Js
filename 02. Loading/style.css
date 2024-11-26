@@ -13,11 +13,10 @@ body {
 }
 .loader-parent {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  
-  gap: 8px;
-  width: 100%;
+  margin:0 auto;
+  width: 125px;
   height: 100vh;
 }
 .loader-parent > div {
@@ -26,6 +25,7 @@ body {
   border-radius: 1000px;
   background: white;
   animation: loading infinite 2s ease-in-out ;
+  text-align: center;
 }
 
 @keyframes loading {
