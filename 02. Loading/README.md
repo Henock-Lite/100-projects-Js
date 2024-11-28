@@ -33,10 +33,18 @@ This project is a simple implementation of animation loading  in using Javascrip
 
 
 ### Features
-In this project, I used the following JavaScript elements:
-1. **`@keyframes loading`**:  
 
-   This method is used to animation on css 
+In this project, I used the following css elements and javascript methode:
+1.  **`animation`**:
+
+   This property is used to animation on css 
+
+
+
+
+2. **`@keyframes`**:  
+
+   This method is  for executed the way how the animation property must work  with transform properties
 
     - css
    
@@ -64,8 +72,22 @@ In this project, I used the following JavaScript elements:
  }
 }
 
+3. **`window.addEventListener("DOMContentLoaded", () => {}`**
+
+I used  DOMContentLoaded methode of javascript which runs when the page is loads
+ - Javascript
+ 
+ window.addEventListener("DOMContentLoaded", () => {
+  const loading = document.querySelector(".loader-parent");
+  setTimeout(() => {
+    loading.style.display = "none"; // Cache l'élément loader
+  }, 1000);
+  ding();
+});
+
+
 
 ### Useful resources
-- [Example resource](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) -this helped me how manipulated  the animation properties
+- [Example resource](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) -this helped me know how manipulated  the animation properties
 ## Author
 - Github- [H.Lite](https://github.com/Henock-Lite)
