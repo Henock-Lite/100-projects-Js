@@ -1,4 +1,4 @@
-# SCROLL_BARRE
+# Custom_schrollbar
 
 This project is a simple implementation of animation on scroll in using css and Javascript 
 
@@ -43,13 +43,13 @@ In this project, I used the following css elements and javascript methode:
 
 3. **`::-webkit-scrollbar`**:  
 
-     This pseudo-element is used to modify the size of schroll barre 
+     This pseudo-element is used to modify the size of schroll bar
 
 
 
 4. **`::-webkit-scrollbar-thumb:hover`**:  
 
-     This pseudo-element is used to hover effect on the  schroll barre 
+     This pseudo-element is used to hover effect on the  schroll bar
 
 
     - css
@@ -57,7 +57,7 @@ In this project, I used the following css elements and javascript methode:
 /* Style pour la barre de défilement */
 
 ::-webkit-scrollbar {
-  width: 10px; /* Largeur de la barre */
+  width: 10px; /* Largeur de la barreµ */
   height: 50px;
 }
 
