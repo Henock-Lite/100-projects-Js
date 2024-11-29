@@ -3,5 +3,5 @@ window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     loading.style.display = "none"; // Cache l'élément loader
   }, 1000);
-  ding();
+
 });

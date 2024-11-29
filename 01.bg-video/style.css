@@ -25,12 +25,7 @@ a {
   font-variant: small-caps;
   transition: ease 0.3s;
 }
-a:hover {
-  background: skyblue;
-  color: white;
-  transform: scale(1.1);
-  border: none;
-}
+
 h1 {
   font-size: clamp(1.8rem, 8vw, 10rem);
   text-transform: capitalize;
