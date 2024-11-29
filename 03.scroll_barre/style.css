@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: sans-serif;
   padding: 18px;
@@ -25,6 +24,11 @@ main {
   height: 100%;
   border: solid 1px rgb(85, 84, 84);
   width: 50%;
+  transition: ease 0.3s;
+}
+.parent-cards.animation {
+  background: rgb(145, 38, 208);
+  transform: translateX(10px);
 }
 
 h1 {
@@ -43,29 +47,24 @@ p {
   text-align: justify;
 }
 
-/* Style pour la barre de défilement */
 ::-webkit-scrollbar {
-  width: 12px; /* Largeur de la barre */
+  width: 10px; 
+  height: 50px;
 }
 
-/* Style pour le fond de la barre de défilement */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Couleur du track */
-  border-radius: 10px; /
+  background: #f1f1f1; 
+  border-radius: 10px;
 }
 
-/* Style pour le curseur de la barre de défilement */
+
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-        to bottom,
-        rgb(62, 212, 250), /* Couleur du haut */
-        rgb(105, 122, 246), /* Couleur du milieu */
-        rgb(145, 38, 208)   /* Couleur du bas */
-      );
-  border-radius: 10px; 
+  background: linear-gradient(
+    to bottom,
+    rgb(62, 212, 250),
+    /* Couleur du haut */ rgb(105, 122, 246),
+    /* Couleur du milieu */ rgb(145, 38, 208) /* Couleur du bas */
+  );
+  border-radius: 10px;
 }
 
-/* Change la couleur du curseur au survol */
-/* ::-webkit-scrollbar-thumb:hover {
-   
-} */
