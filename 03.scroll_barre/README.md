@@ -1,4 +1,4 @@
-# loading
+# SCROLL_BARRE
 
 This project is a simple implementation of animation on scroll in using css and Javascript 
 
@@ -116,9 +116,6 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-
-
-
 
 
 ### Useful resources
