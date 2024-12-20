@@ -2,13 +2,13 @@ const video = document.querySelector("video");
 const btn = document.querySelector("a");
 //initialisation 
 if (video.paused) {
-  btn.textContent = ` Play ▶️`;
+  btn.textContent = `▶️`;
 } else {
-  btn.textContent = ` Pause ⏸️`;
+  btn.textContent = `⏸️`;
 }
 
 btn.addEventListener("click", () => {
   video.paused
-    ? (video.play(), (btn.textContent = ` Pause ⏸️`))
-    : (video.pause(), (btn.textContent = `Play ▶️`));
+    ? (video.play(), (btn.textContent = ` ⏸️`))
+    : (video.pause(), (btn.textContent = `▶️`));
 });
